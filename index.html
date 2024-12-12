@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Monedas JbR</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="currency-converter">
+        <h1>Convertidor de Monedas JbR</h1>
+        <form id="formulario-conversion">
+            <label for="cantidad">Cantidad:</label>
+            <input 
+                type="number" 
+                id="cantidad" 
+                min="0" 
+                step="any" 
+                required 
+                placeholder="Ingrese cantidad"
+            >
+
+            <label for="moneda-origen">De:</label>
+            <div class="currency-selector">
+                <img 
+                    id="bandera-origen" 
+                    src="" 
+                    alt="Bandera de origen" 
+                    class="flag-icon"
+                >
+                <select id="moneda-origen"></select>
+            </div>
+
+            <label for="moneda-destino">A:</label>
+            <div class="currency-selector">
+                <img 
+                    id="bandera-destino" 
+                    src="" 
+                    alt="Bandera de destino" 
+                    class="flag-icon"
+                >
+                <select id="moneda-destino"></select>
+            </div>
+
+            <button type="submit">Convertir</button>
+        </form>
+        <button id="boton-limpiar">Borrar</button>
+        <div id="resultado">El resultado aparecerá aquí...</div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
